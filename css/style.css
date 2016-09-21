@@ -1,0 +1,45 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: 'Poiret One';
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: White;
+  background: #101a30;
+  background: radial-gradient(ellipse at center, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 40%,rgba(8,13,25,1) 100%), url('http://colourlovers.com.s3.amazonaws.com/images/patterns/3564/3564167.png?1366418273');
+}
+.announce {
+  position: relative;
+  padding: 1em 2.5em;
+  border: solid 1px White;
+  background: rgba(255, 255, 255, 0.6);
+  color: #222;
+}
+.content::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: url('../img/arc.svg') center / 5em;
+  width: 5em;
+  height: 5em;
+  bottom: -1.75em;
+  right: -2.5em;
+  opacity: 0.5;
+  transform: rotate(20deg);
+}
+.signature {
+  position: fixed;
+  padding: 1em 2.5em;
+  right: 0;
+  bottom: 0;
+  font-family: 'Arima Madurai', cursive;
+  font-weight: normal;
+  font-size: 50%;
+  font-style: italic;
+}
